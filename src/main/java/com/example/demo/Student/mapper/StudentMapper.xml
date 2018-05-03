@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.Student.mapper.StudentMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.demo.Student.bean.Student">
+        <result column="id" jdbcType="INTEGER" property="stuId"/>
+        <result column="name" jdbcType="VARCHAR" property="strName"/>
+        <result column="sex" jdbcType="VARCHAR" property="stuSex"/>
+        <result column="expression" jdbcType="VARCHAR" property="stuExpression"/>
+        <result column="descr" jdbcType="TIMESTAMP" property="stuDesc"/>
+    </resultMap>
+
+    <insert id="addStudent" parameterType="com.example.demo.Student.bean.Student">
+
+    </insert>
+    
+    <delete id="deleteStudent" parameterType="com.example.demo.Student.bean.Student">
+
+    </delete>
+    
+    <update id="editStudent" parameterType="com.example.demo.Student.bean.Student">
+
+    </update>
+    
+    <select id="findStudent" resultMap="BaseResultMap">
+        
+    </select>
+</mapper>
